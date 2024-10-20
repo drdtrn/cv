@@ -1,0 +1,377 @@
+html {
+    background-color: #f4f1e8;
+  }
+
+header {
+    margin: 20px 0px;
+    background-color: #9b4819;
+    height: fit-content;
+}
+
+#company-logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.com-logo {
+    height: 7em;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+/* .section {
+    margin-top: 5px;
+    height: fit-content;
+} */
+
+.first-div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+    height: 50rem;
+    min-height: fit-content;
+}
+
+.first-div-title {
+    font-size: 86.2px;
+    text-align: center;
+    color: #9b4819;
+}
+
+.first-div-content {
+    font-size: 24px;
+    text-align: center;
+    width: 50%;
+    align-self: center;
+}
+
+.hire-me {
+    font-size: 18px;
+    color: #9b4819;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.hire-me-div {
+    flex: 0.5;
+}
+
+span {
+    color: black;
+}
+
+/* ------------------------------ */
+/* Second div content */
+
+.second-div {
+    background-color: #9b4819;
+    background-image: url(./elements/interior.jpg);
+    height: 50rem;
+    min-height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.cutout {
+    height: 100%;
+    width: 100%;
+    background-color: #9b4819;
+}
+.cutout:hover {
+    opacity: 0;
+}
+.dv1{
+    box-shadow: 3px 3px 7px 3px rgba(0, 0, 0, 0.399);
+}
+.dv2 {
+    opacity: 0;
+}
+.dv3{
+    box-shadow: -3px 3px 7px 3px rgba(0, 0, 0, 0.399);
+}
+.dv4 {
+    opacity: 0;
+}
+.dv5{
+    box-shadow: 3px -3px 7px 3px rgba(0, 0, 0, 0.399);
+    grid-row: span 2;
+}
+.dv6 {
+    opacity: 0;
+}
+.dv7{
+    box-shadow: -3px -3px 7px -3px rgba(0, 0, 0, 0.399);
+}
+/* .dv8{
+    grid-row-start: 3;
+    grid-column-start: 2;
+} */
+.dv9 {
+    opacity: 0;
+}
+
+/* .second-div {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33% 33% 33%;
+    background-color: #9b4819;
+    height: 50rem;
+    min-height: fit-content;
+}
+
+.div3-imgs {
+    height: 100%;
+    border-radius: 10px;
+    filter: drop-shadow(rgba(0, 0, 0, 0.399) 3px 3px 5px);
+}
+
+.pic1 {
+    height: 100%;
+    width: 100%;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.pic1 > img {
+    height: 85%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.pic2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+}
+.pic2 > img {
+    width: 50%;
+    margin-left: 30%;
+}
+
+.pic3 {
+    grid-column-start: 4;
+    grid-row: span 2;
+}
+.pic3 > img {
+    height: 80%;
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
+
+.pic5 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.pic5 > img {
+    height: 115%;
+    width: 80%;
+    margin-top: 30%;
+    margin-left: 55%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.pic6 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.pic6 > img {
+    width: 65%;
+    margin-left: 10%;
+} */
+
+/* ------------------------------ */
+
+/* Third div content */
+
+.third-div {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    /* margin: 10px 50px; */
+    height: 50rem;
+    min-height: fit-content;
+}
+
+.profile-picture-div {
+    height: 100%;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(./elements/pic3.jpg);
+    box-shadow: inset 0px 0px 10px 10px rgb(0, 0, 0); */
+}
+
+.profile-picture {
+    height: 75%;
+    width: 30rem;
+    margin: 0 10px;
+    border: 10px solid #314028;
+    border-radius: 40px;
+}
+
+.name-div {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.name-div > h1 {
+    text-align: center;
+    font-size: 58px;
+    color: #9b4819;
+    margin: 0 0 10% 0;
+}
+
+.summary-div {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.summary-div > h2 {
+    color: #000000;
+    font-size: 28px;
+    margin: 0 15% 5% 15%;
+}
+
+/* ------------------------------ */
+
+/* Fourth div content */
+
+.fourth-div {
+    height: 50rem;
+    min-height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.background-div {
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.background-div > h1 {
+    font-size: 58px;
+    color: #9b4819;
+}
+
+.certification {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.certification > h1 {
+    text-align: center;
+    font-size: 30;
+    margin: 0 15% 0 15%;
+}
+.certification > hr {
+    border-top: 2px solid #9b4819;
+    width: 75%;
+}
+.certification > h2 {
+    text-align: center;
+    font-size: 20;
+    margin: 0 15% 0 15%;
+}
+
+/* ------------------------------ */
+
+.fifth-div {
+    height: 50rem;
+    min-height: fit-content;
+}
+
+.sixth-div {
+    height: 50rem;
+    min-height: fit-content;
+}
+
+.seventh-div {
+    height: 50rem;
+    min-height: fit-content;
+}
+
+.eightth-div {
+    background-color: #314028;
+    height: 50rem;
+    min-height: fit-content;
+}
+
+.ninth-div {
+    background-color: #9b4819;
+    background-image: url(./elements/interior.jpg);
+    height: 50rem;
+    min-height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+/* .interior {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 1;
+} */
+
+hr.solid {
+    border-top: 2px solid #000000;
+    width: 100px;
+  }
+
+/* ALL FONTS GO HERE */
+
+.radley-regular {
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.radley-regular-italic {
+    font-family: "Radley", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+.carlito-regular {
+    font-family: "Carlito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.carlito-bold {
+    font-family: "Carlito", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+.carlito-regular-italic {
+    font-family: "Carlito", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+.carlito-bold-italic {
+    font-family: "Carlito", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+/* TO HERE */
