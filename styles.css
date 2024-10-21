@@ -313,7 +313,7 @@ span {
 }
 
 .fifth-div > .certification > img {
-    height: 50%;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -326,11 +326,12 @@ span {
     height: 50rem;
     min-height: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
 
 .sixth-div > .background-div {
+    grid-column: span 2;
     flex-direction: column;
     align-items: center;
 }
@@ -352,7 +353,7 @@ span {
     height: 50rem;
     min-height: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 5%;
 }
@@ -431,7 +432,7 @@ hr.solid {
   
 /* TO HERE */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .third-div {
         height: fit-content;
         grid-template-columns: 1fr;
@@ -468,7 +469,7 @@ hr.solid {
 
     .fifth-div > .certification {
         grid-column: span 4;
-        margin-top: 30px;
+        margin: 30px 0 0 0;
     }
 
     .fifth-div > .certification > img {
@@ -481,8 +482,6 @@ hr.solid {
         display: flex;
         flex-direction: column;
         gap: 20px;
-    }
-    .second-div > .certification {
     }
 
     .seventh-div {
