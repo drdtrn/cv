@@ -330,6 +330,10 @@ span {
     grid-template-rows: 1fr 1fr;
 }
 
+.sixth-div > .certification {
+    grid-row: span 1;
+}
+
 .sixth-div > .background-div {
     grid-column: span 2;
     flex-direction: column;
@@ -356,6 +360,10 @@ span {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin-bottom: 5%;
+}
+
+.seventh-div > .certification {
+    grid-row: span 1;
 }
 
 .seventh-div > .certification > img {
@@ -432,7 +440,7 @@ hr.solid {
   
 /* TO HERE */
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .third-div {
         height: fit-content;
         grid-template-columns: 1fr;
