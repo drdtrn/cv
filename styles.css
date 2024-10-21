@@ -220,10 +220,10 @@ span {
 .name-div {
     grid-column-start: 1;
     grid-row-start: 1;
-    /* border: 1px solid black; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    margin: 15% 0;
 }
 .name-div > h1 {
     text-align: center;
@@ -231,17 +231,8 @@ span {
     color: #9b4819;
     margin: 0 0 10% 0;
 }
-
-.summary-div {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-
-}
-.summary-div > h2 {
+.name-div > h2 {
+    text-align: center;
     color: #000000;
     font-size: 28px;
     margin: 0 15% 5% 15%;
@@ -294,20 +285,84 @@ span {
 
 /* ------------------------------ */
 
+/* Fifth div content */
+
 .fifth-div {
     height: 50rem;
     min-height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    /* gap: 10px; */
 }
+
+.fifth-div > .background-div {
+    grid-column: span 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.fifth-div > .certification {
+    grid-column: span 2;
+    margin: 30px 15%;
+}
+
+.fifth-div > .certification > hr {
+    width: 70%;
+}
+
+.fifth-div > .certification > img {
+    height: 50%;
+    border-radius: 10px;
+}
+
+
+/* ------------------------------ */
+
+/* Sixth div content */
 
 .sixth-div {
     height: 50rem;
     min-height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
+
+.sixth-div > .background-div {
+    flex-direction: column;
+    align-items: center;
+}
+
+.sixth-div > .certification > img {
+    height: 200px;
+    border-radius: 10px;
+}
+
+.background-div > h2 {
+    grid-column: span 3;
+}
+
+/* ----------------------------- */
+
+/* Seventh div content */
 
 .seventh-div {
     height: 50rem;
     min-height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 5%;
 }
+
+.seventh-div > .certification > img {
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* ---------------------------- */
 
 .eightth-div {
     background-color: #314028;
@@ -375,3 +430,66 @@ hr.solid {
   }
   
 /* TO HERE */
+
+@media (max-width: 768px) {
+    .third-div {
+        height: fit-content;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin: 5% 0 0 0;
+    }
+
+    .profile-picture-div {
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .name-div {
+        grid-row-start: 2;
+    }
+
+    .fourth-div {
+        height: fit-content;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .fourth-div > .certification {
+        grid-column: span 3;
+    }
+
+    .fifth-div {
+        height: fit-content;
+    }
+
+    .fifth-div > .background-div {
+        grid-column: span 4;
+    }
+
+    .fifth-div > .certification {
+        grid-column: span 4;
+        margin-top: 30px;
+    }
+
+    .fifth-div > .certification > img {
+        height: 200px;
+        border-radius: 10px;
+    }
+
+    .sixth-div {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .second-div > .certification {
+    }
+
+    .seventh-div {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
