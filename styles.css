@@ -243,8 +243,8 @@ span {
 /* Fourth div content */
 
 .fourth-div {
-    height: 50rem;
-    min-height: fit-content;
+    height: fit-content;
+    /* min-height: fit-content; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -268,6 +268,11 @@ span {
     justify-content: center;
     align-items: center;
 }
+.certification > img {
+    height: 80px;
+    width: 50%;
+    margin-bottom: 20px;
+}
 .certification > h1 {
     text-align: center;
     font-size: 30;
@@ -288,8 +293,8 @@ span {
 /* Fifth div content */
 
 .fifth-div {
-    height: 50rem;
-    min-height: fit-content;
+    height: fit-content;
+    /* min-height: fit-content; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -303,16 +308,32 @@ span {
     align-items: flex-end;
 }
 
-.fifth-div > .certification {
+.field {
+    grid-row: span 2;
     grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 30px 15%;
 }
 
-.fifth-div > .certification > hr {
+.field > h1 {
+    text-align: center;
+    font-size: 30;
+    margin: 0 15% 0 15%;
+}
+.field > hr {
+    border-top: 2px solid #9b4819;
     width: 70%;
 }
+.field > h2 {
+    text-align: center;
+    font-size: 20;
+    margin: 0 15% 0 15%;
+}
 
-.fifth-div > .certification > img {
+.field > img {
     height: 200px;
     border-radius: 10px;
 }
@@ -330,14 +351,14 @@ span {
     grid-template-rows: 1fr 1fr;
 }
 
-.sixth-div > .certification {
-    grid-row: span 1;
-}
-
 .sixth-div > .background-div {
     grid-column: span 2;
     flex-direction: column;
     align-items: center;
+}
+
+.sixth-div > .certification {
+    grid-row: span 1;
 }
 
 .sixth-div > .certification > img {
@@ -381,12 +402,10 @@ span {
 
 .ninth-div {
     background-color: #9b4819;
-    background-image: url(./elements/interior.jpg);
     height: 50rem;
-    min-height: fit-content;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 /* .interior {
     height: 100%;
@@ -475,12 +494,12 @@ hr.solid {
         grid-column: span 4;
     }
 
-    .fifth-div > .certification {
+    .field {
         grid-column: span 4;
         margin: 30px 0 0 0;
     }
 
-    .fifth-div > .certification > img {
+    .field > img {
         height: 200px;
         border-radius: 10px;
     }
