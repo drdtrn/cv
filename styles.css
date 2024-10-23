@@ -191,9 +191,9 @@ span {
     justify-content: flex-start;
     align-items: center;
 }
-.certification > img {
+a > img {
     height: 80px;
-    width: 50%;
+    /* width: 50%; */
     margin-bottom: 20px;
 }
 .certification > h1 {
