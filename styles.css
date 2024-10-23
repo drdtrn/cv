@@ -110,79 +110,7 @@ span {
     opacity: 0;
 }
 
-/* .second-div {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 33% 33% 33%;
-    background-color: #9b4819;
-    height: 50rem;
-    min-height: fit-content;
-}
-
-.div3-imgs {
-    height: 100%;
-    border-radius: 10px;
-    filter: drop-shadow(rgba(0, 0, 0, 0.399) 3px 3px 5px);
-}
-
-.pic1 {
-    height: 100%;
-    width: 100%;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-.pic1 > img {
-    height: 85%;
-    margin-top: 5%;
-    margin-bottom: 10%;
-}
-
-.pic2 {
-    grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-}
-.pic2 > img {
-    width: 50%;
-    margin-left: 30%;
-}
-
-.pic3 {
-    grid-column-start: 4;
-    grid-row: span 2;
-}
-.pic3 > img {
-    height: 80%;
-    width: 90%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 10%;
-}
-
-.pic5 {
-    grid-column-start: 2;
-    grid-row-start: 2;
-}
-.pic5 > img {
-    height: 115%;
-    width: 80%;
-    margin-top: 30%;
-    margin-left: 55%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-}
-
-.pic6 {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
-.pic6 > img {
-    width: 65%;
-    margin-left: 10%;
-} */
-
-/* ------------------------------ */
+/* --------------------------- */
 
 /* Third div content */
 
@@ -200,12 +128,9 @@ span {
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url(./elements/pic3.jpg);
-    box-shadow: inset 0px 0px 10px 10px rgb(0, 0, 0); */
 }
 
 .profile-picture {
@@ -243,7 +168,6 @@ span {
 
 .fourth-div {
     height: fit-content;
-    /* min-height: fit-content; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
