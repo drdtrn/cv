@@ -64,7 +64,7 @@ span {
 
 .second-div {
     background-color: #9b4819;
-    background-image: url(./elements/interior.jpg);
+    background-image: url(./elements/bckg.jpg);
     height: 50rem;
     min-height: fit-content;
     display: grid;
@@ -190,6 +190,7 @@ span {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 15%;
 }
 a > img {
     height: 80px;
@@ -200,6 +201,11 @@ a > img {
     text-align: center;
     font-size: 30;
     margin: 0 15% 0 15%;
+}
+.certification > h1 > a {
+    text-align: center;
+    font-size: 30;
+    text-decoration-line: underline;
 }
 .certification > hr {
     border-top: 2px solid #9b4819;
@@ -289,8 +295,8 @@ a > img {
 }
 
 .sixth-div > .certification > img {
-    height: 75%;
-    width: 75%;
+    height: 300px;
+    width: 400px;
     border-radius: 10px;
 }
 
@@ -316,8 +322,8 @@ a > img {
 }
 
 .seventh-div > .certification > img {
-    height: 75%;
-    width: 75%;
+    height: 300px;
+    width: 400px;
     border-radius: 10px;
 }
 
